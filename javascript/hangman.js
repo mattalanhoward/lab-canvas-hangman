@@ -37,9 +37,9 @@ class Hangman {
   //add passed letter to guessedLetters string.
   addCorrectLetter(letter) {
     // ... your code goes here
-    for(let i=0;i<this.guessedLetters.length;i++){
-    this.guessedLetters[i] += letter;
-  }
+    
+    this.guessedLetters += letter;
+
   }
 
   addWrongLetter(letter) {
